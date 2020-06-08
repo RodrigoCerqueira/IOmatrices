@@ -5,6 +5,8 @@
 #' 
 #' @param U Use matrix.
 #' @param V Make matrix.
+#' @param U.commodity_industry If the Use Matrix is in the commodity_by_industry format =TRUE, else = FALSE
+#' @param V.industry_commodity If the Make Matrix is in the Industry-by_commodity format = TRUE, else = FALSE
 #' 
 #' @details Use U.commodity_industry=TRUE if your Use Matrix is in a commodity-by-industry format 
 #'          else use U.commodity_industry=FALSE. The same for V.industry_commodity - 
@@ -14,10 +16,10 @@
 #' @author Rodrigo Cerqueira
 #'
 #' @export
-A_cxc <- function(U, V, x.commodity_industry=T, y.industry_commodity=T)
+A_cxc <- function(U, V, U.commodity_industry=T, V.industry_commodity=T)
 {
-  if (x.commodity_industry==T) { 
-    if (y.industry_commodity==T) {
+  if (U.commodity_industry==T) { 
+    if (V.industry_commodity==T) {
       #estrutura de insumos
       B = U %*% solve(diag(rowSums(V)))
       #market-share
@@ -29,7 +31,7 @@ A_cxc <- function(U, V, x.commodity_industry=T, y.industry_commodity=T)
       #Inversa de Leontief
       Z = solve(round(V %*% solve(V)) - A)
     }
-    if (y.industry_commodity==F) {
+    if (V.industry_commodity==F) {
       #estrutura de insumos
       B = U %*% solve(diag(colSums(V)))
       #market-share
@@ -42,7 +44,7 @@ A_cxc <- function(U, V, x.commodity_industry=T, y.industry_commodity=T)
       Z = solve(round(V %*% solve(V)) - A)
     }
   }
-  if (x.commodity_industry==F) {
+  if (U.commodity_industry==F) {
     return("A matriz de recursos (V) deve estar no formato commodity_by_industry")
   }
   return(A)

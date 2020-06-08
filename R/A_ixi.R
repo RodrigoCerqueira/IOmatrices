@@ -5,6 +5,8 @@
 #' 
 #' @param U Use matrix.
 #' @param V Make matrix.
+#' @param U.commodity_industry If the Use Matrix is in the commodity_by_industry format =TRUE, else = FALSE
+#' @param V.industry_commodity If the Make Matrix is in the Industry-by_commodity format = TRUE, else = FALSE
 #' 
 #' @details Use U.commodity_industry=TRUE if your Use Matrix is in a commodity-by-industry format 
 #'          else use U.commodity_industry=FALSE. The same for V.industry_commodity - 
