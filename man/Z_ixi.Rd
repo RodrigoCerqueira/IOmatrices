@@ -5,14 +5,18 @@
 \alias{Z_cxc}
 \title{Total Requirements Matrix in a commodity-by-commodity approach}
 \usage{
-Z_cxc(U, V, x.commodity_industry = T, y.industry_commodity = T)
+Z_cxc(U, V, U.commodity_industry = T, V.industry_commodity = T)
 
-Z_ixi(U, V, x.commodity_industry = T, y.industry_commodity = T)
+Z_ixi(U, V, U.commodity_industry = T, V.industry_commodity = T)
 }
 \arguments{
-\item{U}{Use matrix.}
+\item{U}{Use matriU.}
 
-\item{V}{Make matrix.}
+\item{V}{Make matriU.}
+
+\item{U.commodity_industry}{If the Use Matrix is in the commodity_by_industry format =TRUE, else = FALSE}
+
+\item{V.industry_commodity}{If the Make Matrix is in the Industry-by_commodity format = TRUE, else = FALSE}
 }
 \description{
 Recebe duas matrizes U e V e retorna uma matriz invesa de Leontief - Z

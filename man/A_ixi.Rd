@@ -10,6 +10,10 @@ A_ixi(U, V, U.commodity_industry = T, V.industry_commodity = T)
 \item{U}{Use matrix.}
 
 \item{V}{Make matrix.}
+
+\item{U.commodity_industry}{If the Use Matrix is in the commodity_by_industry format =TRUE, else = FALSE}
+
+\item{V.industry_commodity}{If the Make Matrix is in the Industry-by_commodity format = TRUE, else = FALSE}
 }
 \description{
 Recebe duas matrizes U e V e retorna uma matriz tecnológica - A

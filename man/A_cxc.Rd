@@ -4,12 +4,16 @@
 \alias{A_cxc}
 \title{Technology Matrix in a commodity-by-commodity approach}
 \usage{
-A_cxc(U, V, x.commodity_industry = T, y.industry_commodity = T)
+A_cxc(U, V, U.commodity_industry = T, V.industry_commodity = T)
 }
 \arguments{
 \item{U}{Use matrix.}
 
 \item{V}{Make matrix.}
+
+\item{U.commodity_industry}{If the Use Matrix is in the commodity_by_industry format =TRUE, else = FALSE}
+
+\item{V.industry_commodity}{If the Make Matrix is in the Industry-by_commodity format = TRUE, else = FALSE}
 }
 \description{
 Recebe duas matrizes U e V e retorna uma matriz tecnológica - A
