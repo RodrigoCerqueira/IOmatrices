@@ -1,7 +1,7 @@
 # IOmatrices
-This package provides a set of tools to calculate input-output matrices from a commodity–industry accounting system. The methodology in this functions follows the Miller and Blair's approach (Miller, Ronald E., and Peter D. Blair. Input-output analysis: foundations and extensions. Cambridge university press, 2009) in accordance with the System of National Accounts (SNA). 
+This package provides a set of tools to calculate input-output matrices from a commodity–industry accounting system. This functions follows the Miller and Blair's approach (Miller, Ronald E., and Peter D. Blair. Input-output analysis: foundations and extensions. Cambridge university press, 2009) in accordance with the System of National Accounts (SNA). 
 
- There are two approaches here using the  Use and Make matrices. 1) The Commodity-Demand Driven Model (using "Industry-Based" Technology or "Commodity-Base" Technology) and 2) Industry-Demand Driven Model (using "Industry-Based" Technology or "Commodity-Base" Technology). The Technology (A) and Total Requirement Matrices (Z) obtained by the functions can be Commodity-by-Commodity or Industry-by-Industry. For more information on the calculation methodology, see Miller and Blair's Chapter 5 (2009). 
+Two approaches are included, using the Use and Make matrices: 1) The Commodity-Demand Driven Model (using "Industry-Based" Technology or "Commodity-Base" Technology), and 2) Industry-Demand Driven Model (using "Industry-Based" Technology or "Commodity-Base" Technology). The Technology (A) and Total Requirement (Z) Matrices obtained by these functions can be Commodity-by-Commodity or Industry-by-Industry. For more information on the calculation methodology, see Miller and Blair's Chapter 5 (2009).
 
 ## Getting Started
 The first steps are to obtain the Uses and Make matrices of the country or region for which the input-product analyzes will be realized
